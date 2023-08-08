@@ -18,7 +18,7 @@ export default function App() {
         <Row>
         </Row>
         <Row className="align-items-center justify-content-center">
-          <Col xs="2" className="text-center">
+          {/* <Col xs="2" className="text-center">
             <image/>
             <Figure.Image
               width={120}
@@ -27,7 +27,7 @@ export default function App() {
               alt="石丸治樹"
               src="me/pYUM7q3Z_400x400.jpg"
             />
-          </Col>
+          </Col> */}
           <Col md="auto">
             <h1 className="fw-bold text-center mb-0">石丸治樹のホームページ（仮）</h1>
           </Col>
@@ -47,6 +47,8 @@ export default function App() {
                 <li>東京都 目黒区 在住</li>
                 <li>同志社大学 法学部 政治学科 卒</li>
                 <li>（株）ストックラボ 執行役員</li>
+                <li>Twitter Beta テスター</li>
+                <li>Google ユーザー エクスペリエンス調査 テスター</li>
               </ul>
             </Accordion.Body>
           </Accordion.Item>
