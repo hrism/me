@@ -12,13 +12,13 @@ export default function App() {
   return (
     <>
       <Helmet>
-        <title>石丸治樹のホームページ（仮）</title>
+        <title>石丸治樹 Haruki Ishimaru</title>
       </Helmet>
       <Container className="py-4">
         <Row>
         </Row>
         <Row className="align-items-center justify-content-center">
-          {/* <Col xs="2" className="text-center">
+          <Col xs="2" className="text-center">
             <image/>
             <Figure.Image
               width={120}
@@ -27,9 +27,9 @@ export default function App() {
               alt="石丸治樹"
               src="me/pYUM7q3Z_400x400.jpg"
             />
-          </Col> */}
+          </Col>
           <Col md="auto">
-            <h1 className="fw-bold text-center mb-0">石丸治樹のホームページ（仮）</h1>
+            <h1 className="fw-bold text-center mb-0">石丸治樹 Haruki Ishimaru</h1>
           </Col>
         </Row>
         <hr className="my-4" />
@@ -46,9 +46,9 @@ export default function App() {
                 <li>大阪府出身</li>
                 <li>東京都 目黒区 在住</li>
                 <li>同志社大学 法学部 政治学科 卒</li>
-                <li>（株）ストックラボ 執行役員</li>
-                <li>Twitter Beta テスター</li>
+                <li>（株）ストックラボ 最高執行責任者（COO）</li>
                 <li>Google ユーザー エクスペリエンス調査 テスター</li>
+                <li>Twitter Beta テスター</li>
               </ul>
             </Accordion.Body>
           </Accordion.Item>
@@ -56,7 +56,7 @@ export default function App() {
             <Accordion.Header>SNS・ブログ</Accordion.Header>
             <Accordion.Body>
               <ul>
-                <li><a href="https://twitter.com/hrism2" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <li><a href="https://twitter.com/hrism2" target="_blank" rel="noopener noreferrer">X（旧Twitter）</a></li>
                 <li><a href="https://www.facebook.com/haruki.ishimaru" target="_blank" rel="noopener noreferrer">Facebook</a></li>
                 <li><a href="https://www.threads.net/@hrk_o_k" target="_blank" rel="noopener noreferrer">Threads</a></li>
                 <li><a href="https://www.linkedin.com/in/haruki-ishimaru-178687193/" target="_blank" rel="noopener noreferrer">Linked.in</a></li>

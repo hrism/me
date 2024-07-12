@@ -1,1 +1,4 @@
-# 更新方法
+```
+% yarn build
+% yarn deploy
+```
