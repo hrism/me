@@ -30,7 +30,7 @@ export default function App() {
       <Helmet>
         <title>石丸治樹 Haruki Ishimaru</title>
       </Helmet>
-      <Container className="py-4 mt-4">
+      <Container className="py-4 mt-md-4">
         <Row className="align-items-center justify-content-center">
           <Col className="text-center">
             <Figure.Image
@@ -45,9 +45,9 @@ export default function App() {
             </h1>
           </Col>
         </Row>
-        <Row className="pt-5 pb-4 text-center justify-content-center">
-          デザイン・動画・WEBエンジニアリングの多様なスキルセット、<br/>
-          そしてコミュニケーションとマネジメントのソフトスキルで、<br/>
+        <Row className="pt-5 pb-4 text-center justify-content-center px-2">
+          デザイン・動画・WEBエンジニアリングの<br className="d-md-none"/>多様なスキルセット、<br/>
+          そしてコミュニケーションと<br className="d-md-none"/>マネジメントのソフトスキルで、<br/>
           クライアントの理想を実現します。
         </Row>
         <Row className="pb-2">
@@ -96,7 +96,7 @@ export default function App() {
           <Accordion.Item eventKey="4">
             <Accordion.Header><MdWork className="me-2"/>主な制作物</Accordion.Header>
             <Accordion.Body>
-              <Table striped bordered hover responsive className="mt-3">
+              <Table striped bordered hover responsive className="mt-3 small">
                 <tbody>
                   <tr>
                     <td className="text-center">
