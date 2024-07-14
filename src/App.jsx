@@ -21,6 +21,9 @@ import { MdWork } from "react-icons/md";
 import { FaLaptopCode } from "react-icons/fa";
 import { HiComputerDesktop } from "react-icons/hi2";
 import { IoBusinessSharp } from "react-icons/io5";
+import { SiBereal } from "react-icons/si";
+import { GoFileCode } from "react-icons/go";
+import LatestItems from './components/LatestItems';
 
 
 
@@ -40,7 +43,7 @@ export default function App() {
               alt="石丸治樹"
               src={`${process.env.PUBLIC_URL}/pYUM7q3Z_400x400.jpg`}
             />
-            <h1 className="fw-bold text-center mb-0 mt-3">石丸治樹 <br />
+            <h1 className="fw-bold text-center mb-0 mt-3">石丸 治樹 <br />
               <span className="fs-5">Haruki Ishimaru</span>
             </h1>
           </Col>
@@ -51,7 +54,7 @@ export default function App() {
           クライアントの理想を実現します。
         </Row>
         <Row className="pb-2">
-          <Stack direction="horizontal" gap={2} className="justify-content-center mt-2">
+          <Stack direction="horizontal" gap={3} className="justify-content-center mt-2">
             <a href="https://twitter.com/hrism2" target="_blank" rel="noopener noreferrer" className="fs-3 text-body-secondary text-center">
               <FaSquareXTwitter />
             </a>
@@ -73,12 +76,15 @@ export default function App() {
             <a href="https://qiita.com/hrism" target="_blank" rel="noopener noreferrer" className="d-flex fs-3 mt-2 px-1 rounded-1 text-bg-secondary text-center text-white">
               <SiQiita />
             </a>
+            <a href="https://bere.al/harukii" target="_blank" rel="noopener noreferrer" className="d-flex fs-3 mt-2 px-1 rounded-1 text-bg-secondary text-center text-white">
+              <SiBereal />
+            </a>
           </Stack>
         </Row>
         {/* <hr className="my-4" /> */}
         <Accordion flush className="mt-5">
           <Accordion.Item eventKey="0" className="border-top">
-            <Accordion.Header><CgProfile className="me-2"/>基本情報</Accordion.Header>
+            <Accordion.Header><CgProfile className="me-2 text-primary"/>基本情報</Accordion.Header>
             <Accordion.Body>
               <ul>
                 <li>いしまる-はるき</li>
@@ -94,7 +100,7 @@ export default function App() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="4">
-            <Accordion.Header><MdWork className="me-2"/>主な制作物</Accordion.Header>
+            <Accordion.Header><MdWork className="me-2 text-primary"/>主な制作物</Accordion.Header>
             <Accordion.Body>
               <Table striped bordered hover responsive className="mt-3 small">
                 <tbody>
@@ -246,7 +252,7 @@ export default function App() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
-            <Accordion.Header><FaLaptopCode className="me-2"/>できること</Accordion.Header>
+            <Accordion.Header><FaLaptopCode className="me-2 text-primary"/>できること</Accordion.Header>
             <Accordion.Body>
               <ul>
                 <li>WEBデザイン</li>
@@ -263,7 +269,7 @@ export default function App() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3">
-            <Accordion.Header><HiComputerDesktop className="me-2"/>使えるソフトウェア</Accordion.Header>
+            <Accordion.Header><HiComputerDesktop className="me-2 text-primary"/>使えるソフトウェア</Accordion.Header>
             <Accordion.Body>
               <ul>
                 <li>Figma</li>
@@ -279,7 +285,7 @@ export default function App() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
-            <Accordion.Header><IoBusinessSharp className="me-2"/>職務経歴</Accordion.Header>
+            <Accordion.Header><IoBusinessSharp className="me-2 text-primary"/>職務経歴</Accordion.Header>
             <Accordion.Body>
               <ol>
                 <li>株式会社IMAGICA：映像編集</li>
@@ -289,8 +295,40 @@ export default function App() {
               </ol>
             </Accordion.Body>
           </Accordion.Item>
+          <Accordion.Item eventKey="6">
+            <Accordion.Header><GoFileCode className="me-2 text-primary"/>このサイトの技術仕様</Accordion.Header>
+            <Accordion.Body>
+              <Table striped bordered hover>
+                <tbody>
+                  <tr>
+                    <td className="w-25">UIライブラリ</td>
+                    <td>React-Bootstrap</td>
+                  </tr>
+                  <tr>
+                    <td className="w-25">フロントエンド</td>
+                    <td>React</td>
+                  </tr>
+                  <tr>
+                    <td className="w-25">バックエンド</td>
+                    <td>AWS Lambda</td>
+                  </tr>
+                  <tr>
+                    <td className="w-25">API管理</td>
+                    <td>AWS API Gateway</td>
+                  </tr>
+                  <tr>
+                    <td className="w-25">ホスティング</td>
+                    <td>GitHub Pages</td>
+                  </tr>
+                </tbody>
+              </Table>
+            </Accordion.Body>
+          </Accordion.Item>
 
         </Accordion>
+      </Container>
+      <Container>
+        <LatestItems />
       </Container>
     </>
   );
